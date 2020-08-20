@@ -1,15 +1,16 @@
+import { AuthState, AuthAction } from "./types"
 
-const initialState = {
-    loadignSignInRequest: false,
+const initialState: AuthState = {
+    loadingSignInRequest: false,
     isAuthenticated: false,
 }
 
-export function auth(state = initialState, action: any) {
+export function auth(state = initialState, action: AuthAction): AuthState {
     switch (action.type) {
         case '@auth/SIGN_IN_REQUEST':
             return {
                 ...state,
-                loadignSignInRequest: true,
+                loadingSignInRequest: true
             }
     
         default:
