@@ -5,7 +5,7 @@ const initialState: AuthState = {
     isAuthenticated: false,
 }
 
-export function auth(state = initialState, action: AuthAction): AuthState {
+export default function auth(state = initialState, action: AuthAction): AuthState {
     switch (action.type) {
         case '@auth/SIGN_IN_REQUEST':
             return {
