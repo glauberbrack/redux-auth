@@ -4,15 +4,7 @@ import { Container, Content, AnimationContainer } from './styles';
 
 import logo from '../../assets/icon.png';
 
-
-interface SignInFormData {
-  email: string;
-  password: string;
-}
-
 const UserSignIn: React.FC = () => {
-  
-
   return (
     <Container>
       <Content>
@@ -24,7 +16,7 @@ const UserSignIn: React.FC = () => {
             <input type="password" defaultValue="12345678" />
             <button>Login</button>
           </div>
-          
+
         </AnimationContainer>
       </Content>
     </Container>

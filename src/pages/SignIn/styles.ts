@@ -18,8 +18,8 @@ export const Content = styled.div`
   border: 1px solid #fff;
   border-radius: 5px;
 
-  height: 450px;
-  width: 600px;
+  height: 400px;
+  width: 550px;
 `;
 
 const apperFromLeft = keyframes`
@@ -74,9 +74,7 @@ export const AnimationContainer = styled.div`
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
-    background: transparent;
     border: 1;
-    color: #7C7C7C;
 
     &::placeholder {
       color: #666360;
