@@ -12,3 +12,7 @@ export function signInSuccess({ token }: {token: string}) {
         token
     })
 }
+
+export function signInFailure() {
+    return action('@auth/SIGN_IN_FAILURE');
+}
