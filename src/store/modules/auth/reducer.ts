@@ -3,7 +3,8 @@ import { AuthState, AuthAction } from "./types"
 const initialState: AuthState = {
     loadingSignInRequest: false,
     isAuthenticated: false,
-    error: false
+    error: false,
+    token: null
 }
 
 export default function auth(state = initialState, action: AuthAction): AuthState {
@@ -17,7 +18,8 @@ export default function auth(state = initialState, action: AuthAction): AuthStat
             return {
                 ...state,
                 loadingSignInRequest: false,
-                isAuthenticated: true
+                isAuthenticated: true,
+                token: action.payload.token
             };
         case '@auth/SIGN_IN_FAILURE':
             return {
