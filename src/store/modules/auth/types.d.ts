@@ -5,5 +5,6 @@ export type AuthAction = ActionType<typeof actions>;
 
 export interface AuthState {
     readonly loadingSignInRequest: boolean,
-    readonly isAuthenticated: boolean
+    readonly isAuthenticated: boolean,
+    readonly error: boolean
 }
