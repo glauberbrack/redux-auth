@@ -6,3 +6,9 @@ export function signInRequest({ email, password }: {email: string; password: str
         password
     })
 }
+
+export function signInSuccess({ token }: {token: string}) {
+    return action('@auth/SIGN_IN_SUCCESS', {
+        token
+    })
+}
