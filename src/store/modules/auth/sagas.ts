@@ -11,7 +11,10 @@ export function* signIn({ payload }: ActionType<typeof actions.signInRequest>) {
 
         yield put(actions.signInSuccess({ token: data.token }))
     } catch (error) {
-        
+        yield put(actions.signInFailure())
     }
-
 }
+
+export default all([
+    takeLatest('@auth/SIGN_IN_REQUEST', signIn)
+])
