@@ -1,8 +1,4 @@
 
-<h1 align="center">
-    <img alt="redux-auth" title="#redux-auth" src=".github/logo.svg" width="250px" />
-</h1>
-
 <h1 align="center">  
   <img alt="redux-auth" title="#redux-auth" src=".github/web.png" width="720px" />  
 </h1>
